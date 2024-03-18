@@ -1,0 +1,41 @@
+*------------------------------HOOKS IN REACT-------------------------------*
+Hooks allow you to encapsulate and reuse logic across different components, leading to cleaner and more modular code. 
+They also promote the functional programming paradigm and make it easier to reason about the state and behavior of your components.
+
+1. useState Hook:
+--Allows functional components to manage local state.
+--Returns a stateful value and a function to update it.
+
+2.useEffect Hook:
+--Allows functional components to perform side effects.
+--Runs after every render by default.
+--Can optionally specify dependencies to control when it runs.
+
+3.useContext Hook:
+--Allows functional components to consume values from React context.
+
+4.useReducer Hook:
+--Provides an alternative to useState for managing more complex state logic.
+--Accepts a reducer function and an initial state.
+
+5.useRef Hook: 
+--Returns a mutable ref object whose current property is initialized to the passed argument. 
+--It allows you to keep mutable values that persist across renders without causing re-renders.
+
+6.useCallback: 
+--Returns a memoized callback function. 
+--It is useful for optimizing performance by memoizing functions that don't need to be recreated on every render.
+
+7.useMemo: 
+--Returns a memoized value. 
+--It is similar to useCallback, but instead of memoizing functions, it memoizes expensive computations.
+
+8.useLayoutEffect: 
+--Similar to useEffect, but it fires synchronously after all DOM mutations. 
+--It is useful for measuring elements or performing DOM manipulations that require synchronous updates.
+
+9.useImperativeHandle: 
+--Customizes the instance value that is exposed when using ref with React.forwardRef.
+
+10.useDebugValue: 
+--Provides custom display names for hooks in React DevTools.
